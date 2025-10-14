@@ -13,7 +13,13 @@ This repository includes:
 
 ## Current Labs
 
-- **OpenVAS** - Vulnerability management and scanning labs using Greenbone Vulnerability Management (GVM)
+### OpenVAS - Vulnerability Management
+
+Vulnerability management and scanning labs using Greenbone Vulnerability Management (GVM).
+
+- [**OpenVAS Lab Assignment**](OpenVas/OpenVAS_Assignment.md) - 1-hour structured lab exercise
+- [**OpenVAS CLI Installation and Usage**](OpenVas/OpenVAS_CLI_Installation_and_Usage.md) - Command-line setup and scanning examples
+- [**OpenVAS GUI Installation and Usage**](OpenVas/OpenVAS_GUI_Installation_and_Usage.md) - Web interface setup and usage guide
 
 ## Usage
 
