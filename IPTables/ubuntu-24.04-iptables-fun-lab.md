@@ -1,6 +1,6 @@
-# 🚦 Ubuntu 24.04 *Fun* iptables Lab (GUI-friendly, instant feedback)
+# 🚦 Ubuntu 24.04 _Fun_ iptables Lab (GUI-friendly, instant feedback)
 
-> **Goal:** Learn (and *feel*) how Linux packet filtering works using `iptables` on Ubuntu **24.04** with quick, visual tests you can try from your desktop browser and terminal. Everything is reversible and sandboxed to your own machine.
+> **Goal:** Learn (and _feel_) how Linux packet filtering works using `iptables` on Ubuntu **24.04** with quick, visual tests you can try from your desktop browser and terminal. Everything is reversible and sandboxed to your own machine.
 
 ---
 
@@ -54,8 +54,8 @@ sudo iptables -t nat -F
 
 ## 🧪 Exercise 1 — “Hijack HTTP to your own local page” (visual in your GUI browser)
 
-Make any **HTTP (port 80)** request from *your* user automatically redirect to a tiny local web page you host.
-You’ll *see* it in your browser.
+Make any **HTTP (port 80)** request from _your_ user automatically redirect to a tiny local web page you host.
+You’ll _see_ it in your browser.
 
 ### 1) Start a mini web server on port 8080
 
@@ -159,7 +159,8 @@ sudo iptables -A OUTPUT -m owner --uid-owner $UID -p tcp --dport 80  -j REJECT -
 - Go to **https://en.wikipedia.org** → should **work**.
 - Try **https://example.com** or **https://news.ycombinator.com** → should **fail immediately** (connection reset).
 
-**Undo this exercise** (remove the added rules in reverse order or flush OUTPUT):  
+**Undo this exercise** (remove the added rules in reverse order or flush OUTPUT):
+
 ```bash
 sudo iptables -F OUTPUT
 sudo iptables -P OUTPUT ACCEPT
@@ -167,7 +168,7 @@ sudo iptables -P OUTPUT ACCEPT
 
 ---
 
-## 📉 Exercise 3 — “Slow-mo ping” (rate-limited ICMP you can *see*)
+## 📉 Exercise 3 — “Slow-mo ping” (rate-limited ICMP you can _see_)
 
 Use `hashlimit` to **rate-limit ICMP echo requests** so `ping` visibly stutters.
 
@@ -223,6 +224,7 @@ echo "Created helper scripts in ~/iptables-lab"
 ```
 
 Run with:
+
 ```bash
 ~/iptables-lab/hijack-http-on.sh
 # ...later...
@@ -260,3 +262,5 @@ sudo iptables -t nat -F
 `-j LOG --log-prefix "FW DROP: " --log-level 4` (check with `journalctl -k -f`).
 
 Have fun—and don’t forget to restore when you’re done! 🎈
+
+**Author:** Milan Dima milan.dima@vives.be
