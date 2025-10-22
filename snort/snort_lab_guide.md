@@ -184,7 +184,7 @@ Snort also logs alerts to:
 To view logs:
 
 ```bash
-sudo tail -f /var/log/snort/alert
+sudo tail -f /var/log/snort/snort.alert.fast
 ```
 
 ---
