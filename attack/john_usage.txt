@@ -1,0 +1,2 @@
+# john.conf sample not required for this lab; usage:
+# john --wordlist=rockyou_small.txt --format=sha512crypt shadow_sample.txt
