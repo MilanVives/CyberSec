@@ -1,0 +1,7 @@
+Sample files
+
+weplab.ivs - This is a 128 bit WEP key file. The key is AE:5B:7F:3A:03:D0:AF:9B:F6:8D:A5:E2:C7.
+weblab.pcap - This is a 64 bit WEP key file suitable for the PTW method. The key is 1F:1F:1F:1F:1F.
+
+Lab3 https://labex.io/tutorials/kali-perform-a-korek-chop-chop-attack-against-a-wep-network-594444
+
