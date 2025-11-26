@@ -1,38 +1,41 @@
 
-# Lab 3: Virtual WEP Crack Using Aircrack-ng (No Hardware Required)
+# Lab 3: Virtual WEP Crack Using Aircrack-ng (test.ivs / weplab.ivs)
 
 ## Objective
-Simulate a WEP key recovery attack using a pre-captured `.ivs` file. No real network or hardware needed.
+Perform a simulated WEP key recovery using a pre-captured `.ivs` file. No hardware or network required.
+
+## Files Required
+- **weplab.ivs** (originally `test.ivs` from Aircrack-ng sample files)
 
 ## Tools Needed
-- Kali Linux (VM or native)
-- Aircrack-ng installed
-- Provided file: `weplab.ivs`
+- Kali Linux or any system with **Aircrack-ng** installed
+
+---
 
 ## Instructions
 
-### 1. Open Terminal
-Run the following command in the folder with `weplab.ivs`:
-
+### 1. Cracking the Key
+Run:
 ```
 aircrack-ng weplab.ivs
 ```
 
-### 2. Observe Output
-Aircrack-ng will attempt to recover the key. Students should **not expect a real key** — this is a demo file.
+Expected Output:
+```
+KEY FOUND! [ AE:5B:7F:3A:03:D0:AF:9B:F6:8D:A5:E2:C7 ]
+```
 
-### 3. Questions to Answer
+### 2. Questions for Students
 | Question | Student Answer |
 |----------|----------------|
 | How many IVs were captured? | |
-| Did Aircrack-ng recover a key? Why or why not? | |
-| What type of attack is used internally? | |
-| Why is statistical analysis key to cracking WEP? | |
+| What statistical method does Aircrack-ng use? | |
+| Why is WEP vulnerable? | |
+| What security protocol replaces WEP? | |
+| Why does WPA/WPA2 use TKIP/CCMP instead of IV-based RC4? | |
 
-### 4. Mitigation Discussion
-Students must list **at least three** defenses against WEP attacks (e.g., WPA2, 802.1X, IDS monitoring).
+---
 
-### 5. Bonus (Optional)
-Research:
-- What is the FMS attack?
-- What statistical method does Aircrack-ng use?
+## Instructor Notes (Do NOT distribute)
+File originally named `test.ivs` from Aircrack-ng site.  
+Renamed to **weplab.ivs** for consistency with the lab instructions.
