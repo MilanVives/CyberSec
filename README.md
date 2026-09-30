@@ -21,6 +21,14 @@ Vulnerability management and scanning labs using Greenbone Vulnerability Managem
 - [**OpenVAS CLI Installation and Usage**](OpenVas/OpenVAS_CLI_Installation_and_Usage.md) - Command-line setup and scanning examples
 - [**OpenVAS GUI Installation and Usage**](OpenVas/OpenVAS_GUI_Installation_and_Usage.md) - Web interface setup and usage guide
 
+### Wireshark - Packet Capture and Protocol Analysis
+
+Chapter 1 lab for Cybersecurity Architecture (ACS). Students intercept an ICMP ping, a DNS lookup and an HTTP conversation, then recover cleartext credentials from the HTTP capture.
+
+- [**Wireshark Chapter 1 Lab**](wireshark/Lab1_Wireshark_Traffic_Analysis.md) - 90-minute lab with report template and rubric
+- [**Instructor Solution**](wireshark/Lab1_Instructor_Solution.md) - model answers and marking guide (do not distribute)
+- [**Folder README**](wireshark/README.md) - reference capture details and build instructions
+
 ## Usage
 
 Students should follow the assignment instructions provided in each lab folder. Ensure you have proper authorization before scanning or testing any systems.
