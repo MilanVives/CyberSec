@@ -11,13 +11,13 @@ demonstrate that cleartext protocols break confidentiality.
 | File | Audience | Purpose |
 |------|----------|---------|
 | `Lab1_Wireshark_Traffic_Analysis.md` / `.pdf` | Students | The lab. 90 minutes, tasks, report template, rubric |
-| `Lab1_Instructor_Solution.md` / `.pdf` | **Instructor only** | Model answers, timing plan, marking guide, common failure modes |
 | `chapter1_reference.pcap` | Students | Fallback capture — works with every filter in the lab |
 | `make_reference_capture.py` | Instructor | Regenerates the reference capture |
 | `dist/Chapter1_Wireshark_Lab_Toledo.zip` | — | Ready-to-upload student bundle (excludes the solution) |
 
-> ⚠️ **Do not publish `Lab1_Instructor_Solution.*` to Toledo.** The Toledo ZIP in
-> `dist/` deliberately excludes it.
+> 🔒 The instructor solution (`Lab1_Instructor_Solution.md` / `.pdf`) is kept in the
+> git-ignored `labsolutions/CH01-Getting-Started/wireshark/` folder and is not part of
+> this repository. The Toledo ZIP in `dist/` never includes it.
 
 ## The reference capture
 

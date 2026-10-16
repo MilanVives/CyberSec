@@ -1,1 +1,8 @@
-OpenVas/misc
+# Instructor-only material: model answers, marking guides, solution bundles
+labsolutions/
+
+# Private OpenVAS drafts
+CH03-Scanning-and-Enumeration/openvas/misc/
+
+# macOS
+.DS_Store

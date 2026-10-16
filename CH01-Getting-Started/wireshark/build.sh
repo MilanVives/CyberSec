@@ -61,10 +61,11 @@ li { margin: 2px 0; }
 #TOC a { color: #1a1a1a; }
 CSSEOF
 
-render() {   # render <basename> <title> <subtitle>
+render() {   # render <path-without-.md> <title> <subtitle>
+  local name; name=$(basename "$1")
   pandoc "$1.md" -f gfm -t html5 -s --toc --toc-depth=2 \
-    --metadata title="$2" --metadata subtitle="$3" -o "$tmp/$1.html" 2>/dev/null
-  weasyprint -s "$tmp/lab.css" "$tmp/$1.html" "$1.pdf" 2>/dev/null
+    --metadata title="$2" --metadata subtitle="$3" -o "$tmp/$name.html" 2>/dev/null
+  weasyprint -s "$tmp/lab.css" "$tmp/$name.html" "$1.pdf" 2>/dev/null
   echo "    $1.pdf"
 }
 
@@ -72,9 +73,13 @@ echo "==> Rendering PDFs"
 render Lab1_Wireshark_Traffic_Analysis \
   "Lab 1 — Packet Capture and Protocol Analysis with Wireshark" \
   "Cybersecurity Architecture (ACS) · Chapter 1"
-render Lab1_Instructor_Solution \
-  "Lab 1 — Instructor Solution and Marking Guide" \
-  "Cybersecurity Architecture (ACS) · Chapter 1 · Not for student distribution"
+# The solution lives in the git-ignored labsolutions/ tree; skip it on student clones.
+SOLUTION=../../labsolutions/CH01-Getting-Started/wireshark/Lab1_Instructor_Solution
+if [ -f "$SOLUTION.md" ]; then
+  render "$SOLUTION" \
+    "Lab 1 — Instructor Solution and Marking Guide" \
+    "Cybersecurity Architecture (ACS) · Chapter 1 · Not for student distribution"
+fi
 
 echo "==> Building Toledo student bundle"
 mkdir -p dist
