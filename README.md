@@ -23,6 +23,7 @@ Chapters without a folder have no lab yet.
 
 ### Chapter 3 — Scanning and Enumeration
 
+- [**OpenVAS Quick Lab with Docker**](CH03-Scanning-and-Enumeration/openvas/OpenVAS_Docker_Quick_Lab.md) — entry level: one container, scan a local DVWA
 - [**OpenVAS Lab Assignment**](CH03-Scanning-and-Enumeration/openvas/OpenVAS_Assignment.md) — pre-lab install + 60-minute scan
 - [OpenVAS Installation and Troubleshooting (Kali)](CH03-Scanning-and-Enumeration/openvas/OpenVAS_Installation_and_Troubleshooting.md)
 - [OpenVAS Web Interface Usage](CH03-Scanning-and-Enumeration/openvas/OpenVAS_GUI_Usage.md)

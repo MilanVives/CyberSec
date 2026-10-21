@@ -3,6 +3,10 @@
 **Book:** CEH All-in-One, Chapter 3 — *Scanning and Enumeration* (vulnerability scanning)
 **Duration:** pre-lab installation at home (~1–2 h, mostly unattended) + 60 min in class
 
+> 🐳 **New to vulnerability scanning?** Start with the
+> [OpenVAS Quick Lab with Docker](OpenVAS_Docker_Quick_Lab.md): one container,
+> no Kali install, and you scan a local test target.
+
 ## Learning Objectives
 
 - Install and configure GVM/OpenVAS on Kali Linux.
