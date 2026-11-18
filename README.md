@@ -49,9 +49,7 @@ Chapters without a folder have no lab yet.
 
 ### Chapter 7 — Wireless Network Hacking
 
-- [**Wireshark Analysis of WEP Traffic**](CH07-Wireless-Hacking/Lab1.md)
-- [**Virtual WEP Crack with Aircrack-ng**](CH07-Wireless-Hacking/Lab2.md)
-- [**ChopChop Attack Analysis**](CH07-Wireless-Hacking/lab_chopchop.md)
+- [**Cracking Wireless Encryption (WEP & WPA2)**](CH07-Wireless-Hacking/WEP_WPA_Cracking_Lab.md) — tiered, no hardware needed: Wireshark WEP analysis → WEP key crack → WPA2 handshake crack ([folder README](CH07-Wireless-Hacking/README.md))
 
 ### Chapter 8 — Mobile Communications and the IoT
 
