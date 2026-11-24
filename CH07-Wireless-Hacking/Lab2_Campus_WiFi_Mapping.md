@@ -1,7 +1,7 @@
 # Lab 2 — Mapping Wi-Fi From the Air: Campus and Neighbourhood Survey
 
 **Book:** CEH All-in-One, Chapter 7 — *Wireless Network Hacking* · **Duration:** 60 min
-**Team:** 3 students, at least one **Android** phone · **Hand in:** this worksheet, filled in
+**Team:** 3 students, ideally one **Android** phone (or a Windows laptop, see Part 0) · **Hand in:** this worksheet, filled in
 
 Every Wi-Fi access point announces itself several times per second with a **beacon**:
 its name (SSID), its hardware address (BSSID), its channel and the security it uses.
@@ -59,6 +59,15 @@ On the Android phone(s) of your team:
    - Settings › System › Developer options › **Wi-Fi scan throttling** → **off**.
 5. Start scanning in WiGLE (the play/scan button). Networks appear in the list.
 
+> **No Android phone in your team? Use a Windows laptop.** Open a terminal and run
+> `netsh wlan show networks mode=bssid`. For every network you get the SSID, the
+> **Authentication** (Open / WPA2-Personal / WPA2-Enterprise / WPA3-Personal …), and per
+> BSSID the signal (%), band and channel. Run it again at each stop during the walk.
+> Signal is shown in % instead of dBm: above 70 % is good, below 40 % is weak.
+> **iPhone only:** the *AirPort Utility* app has a Wi-Fi scanner (enable it in Settings ›
+> AirPort Utility) that shows BSSIDs, channels and signal, but **not** the security
+> type, so it only helps for Part 1.2–1.4.
+
 ### How to read the security of a network
 
 WiGLE shows a "capabilities" string next to each network. Learn this table:
@@ -90,13 +99,16 @@ Stand in one spot on campus and look up each school SSID.
 | eduroam | | | | |
 | Campusroam | | | | |
 
-**Q1.** One SSID is protected differently from the other two. Which one, and why do you
-think the school chose that for this network?
+**Q1.** Are all three SSIDs protected in the same way? With **Enterprise** (802.1X), the
+access point doesn't check your password itself: it passes your login to a central
+**RADIUS** server. Why is that better for a school than one shared Wi-Fi password? Why does
+a school still need a *separate* SSID for guests?
 
 <div class="answer"></div>
 
-**Q2.** If VIVES-Guest is open (or shares one password with everyone), who else can read
-traffic that is *not* protected by HTTPS? What should a guest user do about it?
+**Q2.** With a shared password (or no password), everyone on the network can decrypt each
+other's Wi-Fi traffic. With Enterprise, every user gets their **own encryption key**. Explain
+why, and what that means for traffic that is *not* protected by HTTPS.
 
 <div class="answer"></div>
 

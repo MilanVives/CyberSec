@@ -38,7 +38,7 @@ h2:last-of-type + ul li::before { content: ""; display: inline-block; width: 10p
   height: 10px; border: 1.5px solid #111; margin-right: 8px; vertical-align: -1px; }
 li { margin: 2px 0; }
 a { color: #111; text-decoration: none; }
-.answer { height: 72px; margin: 4px 0 10px; border: 1px solid #b8c4ce; border-radius: 3px;
+.answer { height: 66px; margin: 4px 0 8px; border: 1px solid #b8c4ce; border-radius: 3px;
   background: repeating-linear-gradient(transparent 0 23px, #d0d8df 23px 24px);
   -webkit-print-color-adjust: exact; print-color-adjust: exact; break-inside: avoid; }
 .answer.short { height: 36px; }
