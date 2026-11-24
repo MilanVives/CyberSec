@@ -50,6 +50,7 @@ Chapters without a folder have no lab yet.
 ### Chapter 7 — Wireless Network Hacking
 
 - [**Cracking Wireless Encryption (WEP & WPA2)**](CH07-Wireless-Hacking/WEP_WPA_Cracking_Lab.md) — tiered, no hardware needed: Wireshark WEP analysis → WEP key crack → WPA2 handshake crack ([folder README](CH07-Wireless-Hacking/README.md))
+- [**Lab 2 — Mapping Wi-Fi From the Air**](CH07-Wireless-Hacking/Lab2_Campus_WiFi_Mapping.md) — 60 min, phones only (Android + WiGLE): passive survey of the campus Wi-Fi and the poorest encryption in the neighbourhood. Printable worksheet: [PDF](CH07-Wireless-Hacking/Lab2_Campus_WiFi_Mapping.pdf)
 
 ### Chapter 8 — Mobile Communications and the IoT
 

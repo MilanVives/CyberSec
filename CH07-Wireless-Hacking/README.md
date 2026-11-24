@@ -12,6 +12,11 @@ Docker).
   - 🟡 **Tier B** — recover a WEP key with Aircrack-ng
   - 🔴 **Tier C** — crack a WPA2 passphrase from a captured handshake
   - *Appendix* — how the captures are made (optional, needs a monitor-mode adapter)
+- [**Lab 2 — Mapping Wi-Fi From the Air**](Lab2_Campus_WiFi_Mapping.md) — 60 min,
+  phones only: passive survey of the campus Wi-Fi (3 SSIDs, many APs) and a walk around
+  campus scoring the poorest encryption. Printable worksheet:
+  [`Lab2_Campus_WiFi_Mapping.pdf`](Lab2_Campus_WiFi_Mapping.pdf) (rebuild with
+  `./build_lab2.sh`; teacher notes in the git-ignored `labsolutions/` tree)
 
 ## Data files
 
